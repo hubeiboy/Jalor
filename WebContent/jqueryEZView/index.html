@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EZView Demo</title>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="EZView.js"></script>
+    <script src="draggable.js"></script>
+    <style>
+		.m{
+	width: 800px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+	</style>
+</head>
+<body>
+   <div class="m">
+    <section>
+        <h1>EZView Demo</h1>
+
+        <h2>描述</h2>
+
+        <p>jQuery插件显示图像和PDF文件预览</p>
+        <p>点击任何图像的预览将显示相关的图像或PDF文件 </p>
+    </section>
+
+    <div>
+        
+        <img src="img/js.png" alt="js Image" width="80px">
+
+        <img src="img/broken-file-icon-hi.png" alt="js Image" width="80px" href="saf">
+
+        <img src="img/js2.png" alt="js Image" width="80px">
+
+        <img src="img/pdf.png" alt="js Image" width="80px" href="files/yanshi.pdf">
+		
+        <img src="img/word.png" alt="js Image" width="80px">
+        
+        <img src="img/excel.png" alt="js Image" width="80px">
+        
+    </div>
+    </div>
+</body>
+</html>
+
+<script>
+    // Init pluging in all the images
+    $('img').EZView();
+
+
+</script>
+
+<style type="text/css">
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

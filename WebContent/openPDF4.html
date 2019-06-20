@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="build/pdf.js"></script>
+<style type="text/css">
+@charset "utf-8";
+/* CSS Document */
+#body{ background:url(img/%E8%83%8C%E6%99%AF3.jpg)}
+#main{width:1500px; height:1090px; background:url(img/%E8%83%8C%E6%99%AF3.jpg); padding-top:0px;}
+#main_r{width:600px; height:1090px; background:url(img/%E8%83%8C%E6%99%AF3.jpg); float:left}
+#main_l{width:896px; height:996px; ; float:left; padding-top:2px; padding-left:2px; padding-bottom:2px; padding-right:2px; background:#000}
+#head{ width:1500px; height:80px; background:url(img/%E8%83%8C%E6%99%AF3.jpg);}
+#foot{ width:1500px; height:80px; background:url(img/%E8%83%8C%E6%99%AF3.jpg);}
+</style>
+</head>
+<body style="background:url(img/%E8%83%8C%E6%99%AF3.jpg)">
+<center>
+<div id="head">
+</div>
+<div id="main">
+      <div id="main_l">
+               <iframe name="myframe" src="http://localhost:8080/Jalor/web/viewer.html" width="886" height="990"></iframe>
+      </div>
+      <div id="main_r">
+               <h3><a href="http://localhost:8080/generic/web/viewer.html?file=pdf/1.pdf"target="myframe">pdf1</a></h3>
+               <h3><a href="http://localhost:8080/generic/web/viewer.html?file=pdf/2.pdf"target="myframe">pdf2</a></h3>
+               <h3><a href="http://localhost:8080/generic/web/viewer.html?file=pdf/3.pdf" target="myframe">pdf3</a></h3>
+      </div>
+</div>
+<div id="foot">
+</div>
+</body>
+</html>

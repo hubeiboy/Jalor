@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../../build/pdf.js"></script>
+</head>
+<body>
+    <div style="width:100%;">
+	   	<div style="width:60%;float:left;">
+	   		<div style="background:#ccc;width:100%;height:40px;" id="title">
+		   		<span>
+		    		<button>返回</button>
+		    	</span>
+		   		<span style="margin-left:70%;">
+		    		<button>1</button>
+		    	</span>
+		    	<span style="margin-left:10%;">
+		    		<button>2</button>
+		    	</span>
+	   		</div>
+	   		<div id="info">
+	   			<div style="height:90px;">
+	   				<div><span>小小明</span><span>女</span></div>
+	   				<div>JAVA工程师</div>
+	   				<div>本科/2年工作经验/智联招聘</div>
+	   				<div>手机号码：<span>13123456789</span>&nbsp;&nbsp;邮箱：<span>13123456789@163.com</span></div>	
+	   			</div>
+	   			<div>
+	   				<iframe name="myiframe" id="myiframe" src="javascript:window.location.href='http://localhost:8080/web/viewer.html','PDF'" frameborder="1" align="left" scrolling="no" style="width:100%;">
+        					<p>你的浏览器不支持iframe标签</p>
+    				</iframe>
+	   			</div>
+	   		</div>
+	   	</div>
+	    <div style="width:40%;text-align:center;float:right;">
+	    	<div style="background:#3c3c3c;width:100%;height:40px;" id="catalog">
+		   		操作记录
+	   		</div>
+   			<div id="record" style="background:#eee;height:400px;">
+	    	</div>
+	    </div>
+	    
+    </div>
+</body>
+<script>
+	var winHeight=window.screen.availHeight;
+	var titleHeight=document.getElementById("title").offsetHeight;
+	var infoHeight=document.getElementById("info").offsetHeight;
+	var contentHeight=winHeight-(titleHeight+infoHeight);
+	document.getElementById("myiframe").style.height=contentHeight+"px";
+	var recordHeight=winHeight-titleHeight;
+	document.getElementById("record").style.height=recordHeight+"px";
+</script>
+</html>
